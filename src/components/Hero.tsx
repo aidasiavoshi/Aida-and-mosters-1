@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Sparkles, MessageCircle, TrendingUp, Layers, CheckCircle2 } from 'lucide-react';
 import { PORTFOLIO_DATA } from '../data/portfolioData';
+import heroWorkspaceImg from '../assets/images/hero_marketing_workspace_1791654779200.jpg';
 
 interface HeroProps {
   onSelectMascot?: (id: 'strato' | 'adzy' | 'soci' | 'cody') => void;
@@ -96,9 +97,12 @@ export const Hero: React.FC<HeroProps> = ({ onSelectMascot }) => {
               {/* Main Workspace Image */}
               <div className="relative aspect-[16/10] sm:aspect-[4/3] overflow-hidden bg-neutral-900">
                 <img
-                  src="/src/assets/images/hero_marketing_workspace_1791654779200.jpg"
+                  src={heroWorkspaceImg}
                   alt="Aida's Creative Strategy & Digital Marketing Desk in Dubai"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = '/images/hero-workspace.jpg';
+                  }}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent" />

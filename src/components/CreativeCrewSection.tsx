@@ -78,6 +78,9 @@ export const CreativeCrewSection: React.FC<CreativeCrewSectionProps> = ({
                     src={mascot.image}
                     alt={mascot.name}
                     referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = `/images/mascot-${mascot.id}.jpg`;
+                    }}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
                   {isActive && (
@@ -120,6 +123,9 @@ export const CreativeCrewSection: React.FC<CreativeCrewSectionProps> = ({
                     src={activeMascot.image}
                     alt={`${activeMascot.name} - ${activeMascot.subtitle}`}
                     referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = `/images/mascot-${activeMascot.id}.jpg`;
+                    }}
                     className="w-full aspect-square object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/70 via-transparent to-transparent pointer-events-none" />

@@ -1,3 +1,8 @@
+import stratoImg from '../assets/images/mascot_strato_1791654791123.jpg';
+import adzyImg from '../assets/images/mascot_adzy_1791654802044.jpg';
+import sociImg from '../assets/images/mascot_soci_1791654813570.jpg';
+import codyImg from '../assets/images/mascot_cody_1791654825644.jpg';
+
 export interface Mascot {
   id: 'strato' | 'adzy' | 'soci' | 'cody';
   name: string;
@@ -103,7 +108,7 @@ export const PORTFOLIO_DATA = {
       accentBorder: 'border-emerald-200 dark:border-emerald-800',
       accentText: 'text-emerald-700 dark:text-emerald-300',
       badgeBg: 'bg-emerald-100 text-emerald-800',
-      image: '/src/assets/images/mascot_strato_1791654791123.jpg',
+      image: stratoImg,
       personality: 'A thoughtful mint-green fuzzy monster wearing round spectacles and tiny brown horns. Strato is the analytical brain of the crew—he questions every assumption, investigates competitor landscape, and designs rock-solid market positioning before spending a single dollar.',
       description: 'Strato safeguards business longevity. He maps target personas, uncovers underserved market segments, sets KPI benchmarks, and makes sure marketing connects directly with real-world revenue goals.',
       specialties: [
@@ -128,7 +133,7 @@ export const PORTFOLIO_DATA = {
       accentBorder: 'border-amber-200 dark:border-amber-800',
       accentText: 'text-amber-700 dark:text-amber-300',
       badgeBg: 'bg-amber-100 text-amber-800',
-      image: '/src/assets/images/mascot_adzy_1791654802044.jpg',
+      image: adzyImg,
       personality: 'The spark of high energy! A fuzzy bright orange monster with colorful confetti spots, three wide-open curious eyes, and a megaphone. Adzy is all about action, performance ads, lead generation, and ROAS.',
       description: 'Adzy ensures that captivating ideas turn into commercial results. He loves testing creative variations, targeting the exact right audiences on Meta and Snapchat, and optimizing ad spend for maximum conversion.',
       specialties: [
@@ -153,7 +158,7 @@ export const PORTFOLIO_DATA = {
       accentBorder: 'border-rose-200 dark:border-rose-800',
       accentText: 'text-rose-700 dark:text-rose-300',
       badgeBg: 'bg-rose-100 text-rose-800',
-      image: '/src/assets/images/mascot_soci_1791654813570.jpg',
+      image: sociImg,
       personality: 'The heart and warmth of the brand. A soft pink fluffy monster with three soulful eyes and a vintage camera in hand. Soci loves cultural aesthetics, visual storytelling, and human connection.',
       description: 'Soci bridges the gap between commercial services and human emotion. She crafts thoughtful content calendars, directs reel narratives, designs aesthetic feeds, and sparks authentic customer conversations.',
       specialties: [
@@ -178,7 +183,7 @@ export const PORTFOLIO_DATA = {
       accentBorder: 'border-sky-200 dark:border-sky-800',
       accentText: 'text-sky-700 dark:text-sky-300',
       badgeBg: 'bg-sky-100 text-sky-800',
-      image: '/src/assets/images/mascot_cody_1791654825644.jpg',
+      image: codyImg,
       personality: 'A compact, plush cream-colored tech prodigy with glowing cyan antennae and friendly digital eyes. Cody has no arms because he commands computers with pure thought and smart workflows.',
       description: 'Cody unlocks hyper-efficiency. He builds no-code automation sequences with Make.com, uses LLMs for research and variant copy generation, and weaves AI into marketing operations to multiply productivity.',
       specialties: [

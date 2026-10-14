@@ -1,7 +1,7 @@
-import stratoImg from '../assets/images/mascot_strato_1791654791123.jpg';
-import adzyImg from '../assets/images/mascot_adzy_1791654802044.jpg';
-import sociImg from '../assets/images/mascot_soci_1791654813570.jpg';
-import codyImg from '../assets/images/mascot_cody_1791654825644.jpg';
+import stratoImg from '../assets/images/Strato.png';
+import adzyImg from '../assets/images/Adsy.png';
+import sociImg from '../assets/images/Soci.png';
+import codyImg from '../assets/images/Cody.png';
 
 export interface Mascot {
   id: 'strato' | 'adzy' | 'soci' | 'cody';
